@@ -1,7 +1,8 @@
 # Analyzing the Titanic Data
 
 
-## Introductionary words
+Introductionary words
+----
 
 This **project** is part of the [Udacity data analyst nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002).
 
@@ -10,6 +11,14 @@ This analysis is done by **[Guillaume Simler](https://github.com/guillaumesimler
 For more infos, please have a look at the related [githup repo](https://github.com/guillaumesimler/nanodap1)
 
 
+Anaconda Usage
+----
+
+The solution uses [Anaconda](https://www.continuum.io/downloads). The used modules can be found in the [YAM file](https://github.com/guillaumesimler/nanofsdap1/blob/master/env_dap1.yaml)
+
+>
+> env_dap1.yaml
+>
 
 Repository
 ----
