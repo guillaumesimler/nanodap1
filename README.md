@@ -14,7 +14,7 @@ For more infos, please have a look at the related [githup repo](https://github.c
 Anaconda Usage
 ----
 
-The solution uses [Anaconda](https://www.continuum.io/downloads). The used modules can be found in the [YAM file](https://github.com/guillaumesimler/nanofsdap1/blob/master/env_dap1.yaml)
+The solution uses [Anaconda](https://www.continuum.io/downloads). The used modules can be found in the [YAM file](https://github.com/guillaumesimler/nanodap1/blob/master/env_dap1.yaml)
 
 >
 > env_dap1.yaml
@@ -27,4 +27,4 @@ Repository
 License
 ----
 
-The **current version** is under [_MIT License_](https://github.com/guillaumesimler/nanofsdap1/blob/master/LICENSE.txt)
+The **current version** is under [_MIT License_](https://github.com/guillaumesimler/nanodap1/blob/master/LICENSE.txt)
