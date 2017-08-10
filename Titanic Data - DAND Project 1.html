@@ -11813,7 +11813,7 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import Modules</span>
@@ -11829,10 +11829,28 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Populating the interactive namespace from numpy and matplotlib
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import Data </span>
@@ -11855,7 +11873,7 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">passenger_df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">7</span><span class="p">)</span>
@@ -11865,10 +11883,169 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[3]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>C123</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen, Mr. William Henry</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>8.0500</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Moran, Mr. James</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>330877</td>
+      <td>8.4583</td>
+      <td>NaN</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>7</td>
+      <td>0</td>
+      <td>1</td>
+      <td>McCarthy, Mr. Timothy J</td>
+      <td>male</td>
+      <td>54.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>17463</td>
+      <td>51.8625</td>
+      <td>E46</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Number of data set</span>
@@ -11877,6 +12054,24 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>891
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11904,7 +12099,7 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Select the data for the passenger with no cabin</span>
@@ -11919,7 +12114,7 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check if there is a link between the absence of cabin and the class</span>
@@ -11934,10 +12129,33 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number of passengers by class without a cabin number is
+Pclass
+1     40
+2    168
+3    479
+dtype: int64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the number of passenger with cabins</span>
@@ -11952,10 +12170,33 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The number of passengers by class with a cabin number is
+Pclass
+1    176
+2     16
+3     12
+dtype: int64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the proportion of the passenger with cabins</span>
@@ -11964,6 +12205,28 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Pclass
+1    0.814815
+2    0.086957
+3    0.024440
+dtype: float64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -11985,7 +12248,7 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check if the first class non assigned are Sibling or spouses</span>
@@ -11994,6 +12257,30 @@ Actually you would need far more capacity as the sinking of the <a href="https:/
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[9]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Pclass
+1     11
+2    132
+3    484
+dtype: int64</pre>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12039,7 +12326,7 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s1">&#39;Example of a passanger without age data&#39;</span>
@@ -12051,10 +12338,41 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Example of a passanger without age data
+PassengerId                   6
+Survived                      0
+Pclass                        3
+Name           Moran, Mr. James
+Sex                        male
+Age                         NaN
+SibSp                         0
+Parch                         0
+Ticket                   330877
+Fare                     8.4583
+Cabin                       NaN
+Embarked                      Q
+Name: 5, dtype: object
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the data</span>
@@ -12065,6 +12383,24 @@ You could also think that a lot of these passengers would be still up enjoying t
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>177
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12080,13 +12416,217 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">passengers_wo_age</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[12]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>5</th>
+      <td>6</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Moran, Mr. James</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>330877</td>
+      <td>8.4583</td>
+      <td>NaN</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Williams, Mr. Charles Eugene</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>244373</td>
+      <td>13.0000</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>20</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Masselmani, Mrs. Fatima</td>
+      <td>female</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2649</td>
+      <td>7.2250</td>
+      <td>NaN</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>26</th>
+      <td>27</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Emir, Mr. Farred Chehab</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2631</td>
+      <td>7.2250</td>
+      <td>NaN</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>28</th>
+      <td>29</td>
+      <td>1</td>
+      <td>3</td>
+      <td>O'Dwyer, Miss. Ellen "Nellie"</td>
+      <td>female</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>330959</td>
+      <td>7.8792</td>
+      <td>NaN</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>30</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Todoroff, Mr. Lalio</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>349216</td>
+      <td>7.8958</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>31</th>
+      <td>32</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Spencer, Mrs. William Augustus (Marie Eugenie)</td>
+      <td>female</td>
+      <td>NaN</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17569</td>
+      <td>146.5208</td>
+      <td>B78</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>32</th>
+      <td>33</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Glynn, Miss. Mary Agatha</td>
+      <td>female</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>335677</td>
+      <td>7.7500</td>
+      <td>NaN</td>
+      <td>Q</td>
+    </tr>
+    <tr>
+      <th>36</th>
+      <td>37</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Mamee, Mr. Hanna</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2677</td>
+      <td>7.2292</td>
+      <td>NaN</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>42</th>
+      <td>43</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Kraeff, Mr. Theodor</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+      <td>0</td>
+      <td>349253</td>
+      <td>7.8958</td>
+      <td>NaN</td>
+      <td>C</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12157,7 +12697,7 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">display_survivalrate</span><span class="p">(</span><span class="n">df</span><span class="p">):</span>
@@ -12179,7 +12719,7 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">survival</span> <span class="o">=</span> <span class="n">passenger_df</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">]</span>
@@ -12188,6 +12728,187 @@ You could also think that a lot of these passengers would be still up enjoying t
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Get the some more data: 
+
+count    891.000000
+mean       0.383838
+std        0.486592
+min        0.000000
+25%        0.000000
+50%        0.000000
+75%        1.000000
+max        1.000000
+Name: Survived, dtype: float64
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12235,7 +12956,7 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Get the women and children data</span>
@@ -12262,7 +12983,7 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># check data</span>
@@ -12274,10 +12995,214 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[16]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>53.1000</td>
+      <td>C123</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>9</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Johnson, Mrs. Oscar W (Elisabeth Vilhelmina Berg)</td>
+      <td>female</td>
+      <td>27.0</td>
+      <td>0</td>
+      <td>2</td>
+      <td>347742</td>
+      <td>11.1333</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>10</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Nasser, Mrs. Nicholas (Adele Achem)</td>
+      <td>female</td>
+      <td>14.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>237736</td>
+      <td>30.0708</td>
+      <td>NaN</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>11</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Sandstrom, Miss. Marguerite Rut</td>
+      <td>female</td>
+      <td>4.0</td>
+      <td>1</td>
+      <td>1</td>
+      <td>PP 9549</td>
+      <td>16.7000</td>
+      <td>G6</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>12</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Bonnell, Miss. Elizabeth</td>
+      <td>female</td>
+      <td>58.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>113783</td>
+      <td>26.5500</td>
+      <td>C103</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>15</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Vestrom, Miss. Hulda Amanda Adolfina</td>
+      <td>female</td>
+      <td>14.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>350406</td>
+      <td>7.8542</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>16</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Hewlett, Mrs. (Mary D Kingcome)</td>
+      <td>female</td>
+      <td>55.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>248706</td>
+      <td>16.0000</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>19</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Vander Planke, Mrs. Julius (Emelia Maria Vande...</td>
+      <td>female</td>
+      <td>31.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>345763</td>
+      <td>18.0000</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">display_survivalrate</span><span class="p">(</span><span class="n">women_and_children</span><span class="p">[</span><span class="s1">&#39;Survived&#39;</span><span class="p">])</span>
@@ -12287,10 +13212,188 @@ You could also think that a lot of these passengers would be still up enjoying t
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+"
+>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Get the some more data: 
+
+count    354.000000
+mean       0.717514
+std        0.450846
+min        0.000000
+25%        0.000000
+50%        1.000000
+75%        1.000000
+max        1.000000
+Name: Survived, dtype: float64
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">print</span> <span class="s2">&quot;As a comparison, the men survival rate (%) was&quot;</span>
@@ -12298,6 +13401,25 @@ You could also think that a lot of these passengers would be still up enjoying t
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>As a comparison, the men survival rate (%) was
+17.4334140436
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -12350,7 +13472,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Describe the fare and age data</span>
@@ -12362,10 +13484,94 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[19]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Fare</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>891.000000</td>
+      <td>714.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>32.204208</td>
+      <td>29.699118</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>49.693429</td>
+      <td>14.526497</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.420000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>7.910400</td>
+      <td>20.125000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>14.454200</td>
+      <td>28.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>31.000000</td>
+      <td>38.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>512.329200</td>
+      <td>80.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Build a helper function</span>
@@ -12384,7 +13590,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Standardize the fare data</span>
@@ -12395,6 +13601,135 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[21]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+      <th>Cabin</th>
+      <th>Embarked</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>-0.502445</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>0.786845</td>
+      <td>C85</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>-0.488854</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Futrelle, Mrs. Jacques Heath (Lily May Peel)</td>
+      <td>female</td>
+      <td>35.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>113803</td>
+      <td>0.420730</td>
+      <td>C123</td>
+      <td>S</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Allen, Mr. William Henry</td>
+      <td>male</td>
+      <td>35.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>373450</td>
+      <td>-0.486337</td>
+      <td>NaN</td>
+      <td>S</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12440,7 +13775,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">survival_rate_emb</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
@@ -12454,7 +13789,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="n">embarkment_survival</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span>
@@ -12467,6 +13802,72 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Survival rate depending on embarkment port
+</pre>
+</div>
+</div>
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[23]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Survival</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Cherbourg</th>
+      <td>0.553571</td>
+    </tr>
+    <tr>
+      <th>Southamptom</th>
+      <td>0.336957</td>
+    </tr>
+    <tr>
+      <th>Queenstown</th>
+      <td>0.389610</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12491,7 +13892,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">display_embark</span><span class="p">(</span><span class="n">Value</span><span class="p">):</span>
@@ -12516,7 +13917,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the values from Cherbourg</span>
@@ -12525,6 +13926,135 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[25]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>168.000000</td>
+      <td>168.000000</td>
+      <td>168.000000</td>
+      <td>130.000000</td>
+      <td>168.000000</td>
+      <td>168.000000</td>
+      <td>168.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>445.357143</td>
+      <td>0.553571</td>
+      <td>1.886905</td>
+      <td>30.814769</td>
+      <td>0.386905</td>
+      <td>0.363095</td>
+      <td>0.558736</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>259.454201</td>
+      <td>0.498608</td>
+      <td>0.944100</td>
+      <td>15.434860</td>
+      <td>0.557213</td>
+      <td>0.660481</td>
+      <td>1.689562</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.420000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.567631</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>235.500000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>21.250000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.372618</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>455.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>29.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.050421</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>651.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>40.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>0.932152</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>890.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>71.000000</td>
+      <td>2.000000</td>
+      <td>3.000000</td>
+      <td>9.667167</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12540,7 +14070,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the values from Southampton</span>
@@ -12549,6 +14079,135 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[26]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>644.000000</td>
+      <td>644.000000</td>
+      <td>644.000000</td>
+      <td>554.000000</td>
+      <td>644.000000</td>
+      <td>644.000000</td>
+      <td>644.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>449.527950</td>
+      <td>0.336957</td>
+      <td>2.350932</td>
+      <td>29.445397</td>
+      <td>0.571429</td>
+      <td>0.413043</td>
+      <td>-0.103178</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>256.942044</td>
+      <td>0.473037</td>
+      <td>0.789402</td>
+      <td>14.143192</td>
+      <td>1.216600</td>
+      <td>0.853253</td>
+      <td>0.722594</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.670000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.648422</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>225.750000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>21.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.486337</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>447.500000</td>
+      <td>0.000000</td>
+      <td>3.000000</td>
+      <td>28.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.386671</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>673.250000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>38.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>-0.086664</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>889.000000</td>
+      <td>1.000000</td>
+      <td>3.000000</td>
+      <td>80.000000</td>
+      <td>8.000000</td>
+      <td>6.000000</td>
+      <td>4.647001</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
@@ -12564,7 +14223,7 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Check the values from Queenstown</span>
@@ -12573,6 +14232,135 @@ Women and children were fare more likely to survive (72% survival chance) than m
 </pre></div>
 
 </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt output_prompt">Out[27]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style>
+    .dataframe thead tr:only-child th {
+        text-align: right;
+    }
+
+    .dataframe thead th {
+        text-align: left;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Fare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>77.000000</td>
+      <td>77.00000</td>
+      <td>77.000000</td>
+      <td>28.000000</td>
+      <td>77.000000</td>
+      <td>77.000000</td>
+      <td>77.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>417.896104</td>
+      <td>0.38961</td>
+      <td>2.909091</td>
+      <td>28.089286</td>
+      <td>0.428571</td>
+      <td>0.168831</td>
+      <td>-0.381113</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>253.646282</td>
+      <td>0.49086</td>
+      <td>0.369274</td>
+      <td>16.915396</td>
+      <td>0.979105</td>
+      <td>0.656999</td>
+      <td>0.285672</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>6.000000</td>
+      <td>0.00000</td>
+      <td>1.000000</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.512513</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>209.000000</td>
+      <td>0.00000</td>
+      <td>3.000000</td>
+      <td>17.500000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.492378</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>389.000000</td>
+      <td>0.00000</td>
+      <td>3.000000</td>
+      <td>27.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.492378</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>630.000000</td>
+      <td>1.00000</td>
+      <td>3.000000</td>
+      <td>34.500000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>-0.336334</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>891.000000</td>
+      <td>1.00000</td>
+      <td>3.000000</td>
+      <td>70.500000</td>
+      <td>4.000000</td>
+      <td>5.000000</td>
+      <td>1.163700</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
